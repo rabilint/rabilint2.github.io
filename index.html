@@ -1,17 +1,71 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%20Condensed">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="css/style.css">
   <style>
-  .one{
-		background-color:"#2B4074;"
-		
+
+  .wrapper{
+	display: flex;
+	flex-direction: column
   }
+	.header {
+		display:flex;
+		flex-direction: row-reverse;
+		align-items:center;
+		justify-content:space-between;
+		color:red;
+		background-color: rgb(43,64,116);
+		margin:0;
+		height:80px				
+	}
+	.dich{
+		background-color: rgb(255,255,255);
+		width:40px;
+		height:40px;
+		margin-right:10px;
+		border-radius: 4px;
+		color:black;
+		vertical-align: text-bottom;
+		
+		
+
+	}
+	.middle{
+		
+		
+		
+
+		height:193px;
+		background-size:100% 100%;
+		background-image:url("images/image_2022-09-26_19-28-57.png");
+		
+	}
+	.bottem{
+		grid-row:3;
+		color:White;
+		background-color: rgb(43,64,116);
+		height:301px;
+		font-family:Roboto;
+		text-align:center;
+		
+	}
+	.dot {
+		height: 10px;
+		width: 10px;
+		background-color: #2B4074;
+		border-radius: 50%;
+		display: inline-block;
+		
+	}
+		
+
   </style>
 </head>
 <body>
@@ -19,8 +73,28 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
-  <div class="one"> 
-	<h1>hhh</h1>
+  <div class="wrapper"> 
+	<h1  class="header">
+
+	<div style="text-align: center; font-size: medium; " class="dich" >
+	<p style="margin-top:10px">☰</p>
+	</div>	
+	<img style="margin:0 ; margin-top:7px ; margin-left:25px ; width:25% "src="images/download.png">	
+	</h1>
+	<div class="middle">
+	<p style="color:White ; text-align: center;  font-family:Roboto Condensed; font-size:28px; margin-bottom:20px"> МЫСЛИ <br> ГЛОБАЛЬНО </p>
+	<img style="margin-left: auto ; margin-right: auto; display: block;" src="images/unknown.png">  
+	<div style=" display:flex; justify-content:center; margin-top:40px; ">
+	<span class="dot"> </span> <img src="" <span class="dot"> </span> 
+	</div>
+
+	</div>
+	<div class="bottem">
+		<h1 style="font-size:24px"> Вы полюбите нас с <br> первой встречи!</h1>
+		<p style="font-size:16px ; margin-bottom:10%"> Мы предоставляем комплексный подход к продвижению компании , продуктов и услуг в цифровой сфере </p>
+		<img style="margin-left: auto ; margin-right: auto; display: block; height:50px ; width:200px" src="images/recall me.png">
+
+	</div>
   </div>
 </body>
 </html>
