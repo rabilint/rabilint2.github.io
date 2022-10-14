@@ -282,15 +282,43 @@
 
 		grid-template-columns: 100%;
 	}
+	.palocka2{
+		margin-left:auto;margin-right:auto;display:block;
+		height:8px;width:50px;padding-bottom:10%;
+	}
 	@media only screen and (max-width: 768px) {
 		.next1{
 			height:1650px;
 			display: grid;
-		}	
-		.1grid{
+		}
+		.ludi{
+			width:520px;
+			height:478px;
+		}
+		.next2{
+			height:2291px;
+		}
+		.next3{
+			height:1007px;
+		}
+		.text6{
+			width:518px;
+			height:160px;
+		}
+		.palocka2{
+			margin-left:auto;margin-right:auto;display:block;
+			height:8px;width:100px;padding-bottom:29px;
+		}
+		.grid1{
 			display: grid;
 		}
-
+		.RenoDaster{
+			width:518px;height:460px; margin-left:auto;
+			margin-right:auto;
+			display: flex;
+			align-items: center;
+			justify-content: center
+		}
 		.text5{
 			width:560px;
 			font-size:24px;
@@ -301,7 +329,7 @@
 		.text2{
 			width:580px;
 		}
-		.1grid{
+		.grid1 {
 			grid-template-columns: 50% 50%;
 		}
 		.text3{
@@ -347,12 +375,38 @@
 			display:block;
 			font-family:Dosis
 		}
+		.textOP{
+			font-size:20px;
+		}
+		.slojnaidich{
+			grid-template-columns: 50% 50%;
+		}
+		.next4{
+			height:1745px;
+		}
 	 }
 	@media only screen and (max-width: 425px) {
 		.next1{
 			height:3150px;
 		}
-		.1grid{
+		.slojnaidich{
+			grid-template-columns: 100%;
+		}
+		.RenoDaster{
+			width:280px;height:250px; margin-left:auto;
+			margin-right:auto;
+			display: flex;
+			align-items: center;
+			justify-content: center
+		}
+		.ludi{
+			height:243.88px;
+			width:281.08px;
+		}
+		.textOP{
+			font-size:16px;
+		}
+		.grid1{
 			grid-template-columns: 100%;
 		}
 		.text2{
@@ -405,6 +459,7 @@
 			display:block;
 			font-family:Dosis
 		}
+
 	 }
 	@media only screen and (max-width: 375px) {
 		.next1{
@@ -473,7 +528,7 @@
 		<img style="margin-left:auto;margin-right:auto;display: block;width:100px" src="images/palocka.png">
 		<p class="text5">От идеи до незабываемого и измеримого результата.</p>
 		<p class="text3" style="color:#797979;font-family: Roboto ;">Интеграция безупречного производства, передовых технологий и тщательного измерения производительности </p>
-		<div class="1grid" style="display: grid;grid-template-columns: 50% 50%;">
+		<div class="grid1" style="display: grid;">
 			<div class="content-box " style="cursor: pointer;padding-bottom:18%;padding-top:25%">
 				<img src="iconsfont/1ICO.png" style="margin-left:auto;margin-right:auto;display: block;width:58px;height:63px;">
 				<p style="text-align:center;font-family:Roboto Condensed;font-size:16px;color:#4A4A4A;line-height:18.75px;letter-spacing:2px;"><strong>СТРАТЕГИЯ</strong></p>
@@ -527,31 +582,31 @@
 	<div class="next2">
 	<div>
 		<p id="c1" class="text4" style="color:#fff">Наши Проекты</p>
-		<img src="iconsfont/unknown.png" style="margin-left:auto;margin-right:auto;display:block;height:8px;width:50px;padding-bottom:10%">
+		<img class="palocka2" src="iconsfont/unknown.png" >
 	</div>
 	<div  class="span" >
-		<div style="cursor: pointer;background-image:url(iconsfont/laq.png); background-size:100% 100%;width:280px;height:250px; margin-left:auto;margin-right:auto;display: flex;align-items: center;justify-content: center;">
+		<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/laq.png); background-size:100% 100%;">
 			<img class="boba" src="iconsfont/dichnext3.png" style="width:253.88px;height:226.99px;">
 			<img class="boba" src="iconsfont/infoandlupa.png" style="position: absolute;width:73px;height:33px">			
 		</div>
 		<p class="textOP"><strong>Lalique бутик</strong></p>
 	</div>
 	<div  class="span" >
-		<div style="cursor: pointer;background-image:url(iconsfont/dom.png); background-size:100% 100%;width:280px;height:250px; margin-left:auto;margin-right:auto;display: flex;align-items: center;justify-content: center;">
+		<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/dom.png); background-size:100% 100%;">
 			<img class="boba" src="iconsfont/dichnext3.png" style="width:253.88px;height:226.99px;">
 			<img class="boba" src="iconsfont/infoandlupa.png" style="position: absolute;width:73px;height:33px">			
 		</div>
 		<p class="textOP"><strong>Строительство домов</strong></p>
 	</div>
 	<div class="span" >
-		<div style="cursor: pointer;background-image:url(iconsfont/cafe.png); background-size:100% 100%;width:280px;height:250px; margin-left:auto;margin-right:auto;display: flex;align-items: center;justify-content: center;">
+		<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/cafe.png); background-size:100% 100%;">
 			<img class="boba" src="iconsfont/dichnext3.png" style="width:253.88px;height:226.99px;">
 			<img class="boba" src="iconsfont/infoandlupa.png" style="position: absolute;width:73px;height:33px">			
 		</div>
 		<p class="textOP"><strong>Кофейня</strong></p>
 	</div>
 	<div class="span" >
-		<div style="cursor: pointer;background-image:url(iconsfont/bitch.png); background-size:100% 100%;width:280px;height:250px; margin-left:auto;margin-right:auto;display: flex;align-items: center;justify-content: center;">
+		<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/bitch.png); background-size:100% 100%;">
 			<img class="boba" src="iconsfont/dichnext3.png" style="width:253.88px;height:226.99px;">
 			<img class="boba" src="iconsfont/infoandlupa.png" style="position: absolute;width:73px;height:33px">			
 		</div>
@@ -559,7 +614,7 @@
 	</div>		
 	</div>
 	<div class="next3" >
-		<img src="iconsfont/people.png" style="width:280px;height:250px ; margin-left:auto;margin-right:auto;display:block;">
+		<img class="ludi" src="iconsfont/people.png" style=" margin-left:auto;margin-right:auto;display:block;">
 		<p id="c2" class="text4" style="color:#4A4A4A;">Команда</p>
 		<img src="iconsfont/lineblue.png" style="width:45px;height:8px; margin-left:auto;margin-right:auto;display:block;">
 		<p class="text6">Наша команда - это наша самая большая ценность. 
@@ -575,7 +630,7 @@
 	<div class="next4">
 		<p class="text4" style="color:#4A4A4A;">Последние Новости</p>
 		<img style="margin-left:auto;margin-right:auto;display: block;width:50px;height:8px;padding-bottom:40px" src="images/palocka.png">
-		<div  style="display:grid; grid-template-columns: 100%">
+		<div class="slojnaidich " style="display:grid; ">
 			
 			<div class="Nikita" /* first *\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:443px;background-image:url(images/domnatelefone.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
 				<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
