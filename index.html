@@ -14,10 +14,11 @@
   <link rel="stylesheet" href="css/style.css">
   <style>
 
-  .wrapper{
-	display: flex;
-	flex-direction: column
-  }
+	  .wrapper{
+		display: flex;
+		flex-direction: column
+	  }
+	 
 	.header {
 		display:flex;
 		flex-direction: row-reverse;
@@ -91,7 +92,11 @@
 
 	}
 	p.bimba {
-		visibility: hidden
+		visibility: hidden;
+		width:196px;
+		text-align:center;
+		
+		font-family:Dosis
 	}
 
 	.content-box{
@@ -249,6 +254,116 @@
 		line-height: 94%;
 		letter-spacing: 1px;
 	}
+	.DiGiImg{
+		margin:0 ; 
+		margin-top:7px ;
+		margin-left:25px ; 
+		width:25% ;
+		height:65.73px;
+		width:100px;
+	}
+	.palca1{
+		margin-left: auto ;
+		margin-right: auto; 
+		display: block;
+		margin-top:20px;
+		width:61px
+	}
+	.tblm{
+		visibility:hidden;
+	}
+	@media only screen and (max-width: 768px) {
+		.next1{
+			height:2720px;
+		}	
+		.DiGiImg{
+			margin-left:53px;	
+		}
+		.middle{
+			height:386px;			
+		}
+		.palca1{
+			margin-top:0px
+		}
+		.text1{
+			font-size:60px;
+			height:128px;
+			line-height:60px;
+			margin-bottom:0px;
+		}
+		.dich{
+			margin:30px;
+		}
+		p.bimba {
+			visibility: hidden;
+			width:196px;
+			font-size:16px;
+			text-align:center;
+			margin-left:auto;
+			margin-right:auto;
+			display:block;
+			font-family:Dosis
+		}
+	 }
+	@media only screen and (max-width: 425px) {
+		.next1{
+			height:3150px;
+		}		
+		.dich{
+			margin:20px;
+		}
+		.text1{
+			font-size:28px;
+			height:64px;
+			line-height:28px;
+			margin-bottom:0px;
+		}
+		.middle{
+			height:193px;			
+		}
+		p.bimba {
+			visibility: hidden;
+			width:196px;
+			font-size:20px;
+			text-align:center;
+			margin-left:auto;
+			margin-right:auto;
+			display:block;
+			font-family:Dosis
+		}
+	 }
+	@media only screen and (max-width: 375px) {
+		.next1{
+			height:3000px;
+		}		
+		p.bimba {
+			visibility: hidden;
+			width:196px;
+			font-size:20px;
+			text-align:center;
+			margin-left:auto;
+			margin-right:auto;
+			display:block;
+			font-family:Dosis
+		}
+	 }
+	@media only screen and (max-width: 346px) {
+		.next1{
+			height:2720px;
+		}		
+		p.bimba {
+			visibility: hidden;
+			width:196px;
+			font-size:16px;
+			text-align:center;
+			margin-left:auto;
+			margin-right:auto;
+			display:block;
+			font-family:Dosis
+		}
+	 }
+	 
+	 
   </style>
 </head>
 <body>
@@ -260,13 +375,14 @@
 	<h1 id="ctop" class="header">
 
 	<div style="text-align: center; font-size: medium; " class="dich" >
-	<p style="margin-top:10px">☰</p>
+		<p style="margin-top:10px">☰</p>
 	</div>	
-	<img style="margin:0 ; margin-top:7px ; margin-left:25px ; width:25% "src="images/download.png">	
+	<img class="DiGiImg" style=""src="images/download.png">	
 	</h1>
 	<div class="middle" style="position: relative;">
 		<p class="text1" > МЫСЛИ <br> ГЛОБАЛЬНО </p>
-		<img style="margin-left: auto ; margin-right: auto; display: block;margin-top:20px;width:61px" src="images/unknown.png">  
+		<img class="palca1"  src="images/unknown.png">  
+		<img class="tblm" src="iconsfont/tblm.png">
 		<div class="circle">
 			<span class="dot "> </span> <img style="width:10px ; height: 10px" src="iconsfont/circle.png"> <span class="dot"> </span> 
 		</div>
@@ -286,49 +402,49 @@
 			<div class="content-box " style="cursor: pointer;padding-bottom:18%;padding-top:25%">
 				<img src="iconsfont/1ICO.png" style="margin-left:auto;margin-right:auto;display: block;width:58px;height:63px;">
 				<p style="text-align:center;font-family:Roboto Condensed;font-size:16px;color:#4A4A4A;line-height:18.75px;letter-spacing:2px;"><strong>СТРАТЕГИЯ</strong></p>
-				<p class="bimba" style="margin:0;text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
+				<p class="bimba" style="text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
 				<p class="bimba" style="cursor: pointer;font-family:Roboto Condensed;font-size:16px;text-align:center;letter-spacing: 2px;line-height: 18.75px;margin-bottom:0"><strong>ПОДРОБНЕЕ →</strong></p>
 			</div>
 			<div class="content-box bimba" style="cursor: pointer;padding-top:18%;padding-bottom:15%;">
 				<img src="iconsfont/2ICO.png" style="margin-left:auto;display:block;margin-right:auto;width:58px;height:63px;">
 				<p style="text-align:center; font-family:Roboto Condensed;color:#4A4A4A;"><strong>АНАЛИЗ</strong></p>
-				<p class="bimba" style="margin:0;text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
+				<p class="bimba" style="text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
 				<p class="bimba" style="cursor: pointer;font-family:Roboto Condensed;font-size:16px;text-align:center;letter-spacing: 2px;line-height: 18.75px;margin-bottom:0"><strong>ПОДРОБНЕЕ →</strong></p>
 			</div>
 			<div class="content-box bimba" style="cursor: pointer;padding-top:18%;padding-bottom:15%;">
 				<img src="iconsfont/3ICO.png" style="margin-left:auto;display:block;margin-right:auto;width:58px;height:63px;">
 				<p style="text-align:center;font-family:Roboto Condensed;font-size:16px;color:#4A4A4A;line-height:18.75px;letter-spacing:2px;"><strong>СОЦ СЕТИ</strong></p>
-				<p class="bimba" style="margin:0;text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
+				<p class="bimba" style="text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
 				<p class="bimba" style="font-family:Roboto Condensed;font-size:16px;text-align:center;letter-spacing: 2px;line-height: 18.75px;margin-bottom:0"><strong>ПОДРОБНЕЕ →</strong></p>
 			</div>
 			<div class="content-box bimba" style="cursor: pointer;padding-top:18%;padding-bottom:15%;">
 				<img src="iconsfont/4ICO.png" style="margin-left:auto;display:block;margin-right:auto;width:58px;height:63px;">
 				<p style="text-align:center; font-family:Roboto Condensed;color:#4A4A4A;"><strong>РАЗВИТИЕ</strong></p>
-				<p class="bimba" style="margin:0;text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
+				<p class="bimba" style="text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
 				<p class="bimba" style="font-family:Roboto Condensed;font-size:16px;text-align:center;letter-spacing: 2px;line-height: 18.75px;margin-bottom:0"><strong>ПОДРОБНЕЕ →</strong></p>
 			</div>
 			<div class="content-box" style="cursor: pointer;padding-top:18%;padding-bottom:15%;">
 				<img src="iconsfont/5ICO.png" style="margin-left:auto;display:block;margin-right:auto;width:58px;height:63px;">
 				<p style="text-align:center;font-family:Roboto Condensed;font-size:16px;color:#4A4A4A;line-height:18.75px;letter-spacing:2px;"><strong>КОНТЕНТ</strong></p>
-				<p class="bimba" style="margin:0;text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
-				<p class="bimba" style="font-family:Roboto Condensed;font-size:16px;text-align:center;letter-spacing: 2px;line-height: 18.75px;margin-bottom:0"><strong>ПОДРОБНЕЕ →</strong></p>
+				<p class="bimba" style="text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
+				<p class="bimba" style="font-family:Roboto Condensed;font-size:16px;text-align:center;letter-spacing: 2px;line-height: 18.75px;margin-bottom:0;color:#2B4074"><strong>ПОДРОБНЕЕ →</strong></p>
 			</div>
 			<div class="content-box" style="cursor: pointer;padding-top:18%;padding-bottom:15%;">
 				<img src="iconsfont/6ICO.png" style="margin-left:auto;display:block;margin-right:auto;width:58px;height:63px;">
 				<p style="text-align:center;font-family:Roboto Condensed;font-size:16px;color:#4A4A4A;line-height:18.75px;letter-spacing:2px;"><strong>ДИЗАЙН UX</strong></p>
-				<p class="bimba" style="margin:0;text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
+				<p class="bimba" style="text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
 				<p class="bimba" style="font-family:Roboto Condensed;font-size:16px;text-align:center;letter-spacing: 2px;line-height: 18.75px;margin-bottom:0"><strong>ПОДРОБНЕЕ →</strong></p>
 			</div>
 			<div class="content-box" style="cursor: pointer;padding-top:18%;padding-bottom:15%;">
 				<img src="iconsfont/7ICO.png" style="margin-left:auto;display:block;margin-right:auto;width:58px;height:63px;">
 				<p style="text-align:center;font-family:Roboto Condensed;font-size:16px;color:#4A4A4A;line-height:18.75px;letter-spacing:2px;"><strong>ТАРГЕТИРОВАННАЯ <br> РЕКЛАМА</strong></p>
-				<p class="bimba" style="margin:0;text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
+				<p class="bimba" style="text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
 				<p class="bimba" style="font-family:Roboto Condensed;font-size:16px;text-align:center;letter-spacing: 2px;line-height: 18.75px;margin-bottom:0"><strong>ПОДРОБНЕЕ →</strong></p>
 			</div>
 			<div class="content-box" style="cursor: pointer;padding-top:18%;padding-bottom:15%;">
 				<img src="iconsfont/8ICO.png" style="margin-left:auto;display:block;margin-right:auto;width:58px;height:63px;">
 				<p style="text-align:center;font-family:Roboto Condensed;font-size:16px;color:#4A4A4A;line-height:18.75px;letter-spacing:2px;"><strong>ПРОДУКТ</strong></p>
-				<p class="bimba" style="margin:0;text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
+				<p class="bimba" style="text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
 				<p class="bimba" style="font-family:Roboto Condensed;font-size:16px;text-align:center;letter-spacing: 2px;line-height: 18.75px;margin-bottom:0"><strong>ПОДРОБНЕЕ →</strong></p>
 			</div>
 		</div>
