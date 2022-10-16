@@ -247,18 +247,7 @@
 		font-size:16px;
 		height:270px;
 	}
-	.textend{
-		text-align:center;
-		margin-top:85px;
-		padding-left:15%;
-		display: inline-block;
-		color:#FFFFFF;
-		font-family:Roboto;
-		font-size:20px;
-		width:274px;
-		line-height: 94%;
-		letter-spacing: 1px;
-	}
+	
 	.DiGiImg{
 		margin:0 ; 
 		margin-top:7px ;
@@ -290,6 +279,14 @@
 		.next1{
 			height:1650px;
 			display: grid;
+		}
+		figure {
+			break-inside: avoid;
+			width:270px;
+
+		}
+		.Nikita{
+			margin-right:15px;
 		}
 		.ludi{
 			width:520px;
@@ -331,6 +328,7 @@
 		}
 		.grid1 {
 			grid-template-columns: 50% 50%;
+			
 		}
 		.text3{
 			width:560px;
@@ -379,18 +377,64 @@
 			font-size:20px;
 		}
 		.slojnaidich{
-			grid-template-columns: 50% 50%;
+			  column-count: 2;
+
 		}
 		.next4{
 			height:1745px;
+		}
+		.watchvideo{
+			width:230px;height:60px;
+			margin-left:auto;margin-right:auto;margin-top:84px;display:block;
+		}
+		.item-12{
+			font-size:32px;
+			padding-top:40px;
+			width:552px;
+		}
+		.textend{
+			display: inline-block;
+			margin-top:85px;
+			color:#FFFFFF;
+			font-family:Roboto;
+			font-size:24px;
+			padding-left:53px;
+			padding-right:40px;
+			line-height: 94%;
+			letter-spacing: 2px;
 		}
 	 }
 	@media only screen and (max-width: 425px) {
 		.next1{
 			height:3150px;
 		}
+		.textend{
+			display: inline-block;
+			text-align:center;
+			margin-top:85px;
+
+
+			color:#FFFFFF;
+			font-family:Roboto;
+			font-size:20px;
+			padding-left:20px;
+			padding-right:20px;
+			line-height: 94%;
+			letter-spacing: 2px;
+		}
+		.item-12{
+			font-size:24px;
+			padding-top:25%;
+			width:275px;
+		}
+		.next2{
+			height:1384px;
+		}
+		.next3{
+			height:844px;
+		}
 		.slojnaidich{
-			grid-template-columns: 100%;
+			  column-count: 1;
 		}
 		.RenoDaster{
 			width:280px;height:250px; margin-left:auto;
@@ -459,7 +503,15 @@
 			display:block;
 			font-family:Dosis
 		}
+		.text6{
+			width:280px;
+			height:270px;
+			line-height:18px;
+		}
 
+		.next4{
+			height:2896px;
+		}
 	 }
 	@media only screen and (max-width: 375px) {
 		.next1{
@@ -616,7 +668,7 @@
 	<div class="next3" >
 		<img class="ludi" src="iconsfont/people.png" style=" margin-left:auto;margin-right:auto;display:block;">
 		<p id="c2" class="text4" style="color:#4A4A4A;">Команда</p>
-		<img src="iconsfont/lineblue.png" style="width:45px;height:8px; margin-left:auto;margin-right:auto;display:block;">
+		<img  src="iconsfont/lineblue.png" style="width:45px;height:8px; margin-left:auto;margin-right:auto;display:block;">
 		<p class="text6">Наша команда - это наша самая большая ценность. 
 		Мы трудились, чтобы собрать группу  экспертов,
 		чьи навыки дополняют друг друга. 
@@ -625,68 +677,82 @@
 		поэтому мы постоянно ищем способы, как стать лучше 
 		в том, что мы делаем.
 		</p>
-		<img src="iconsfont/watchvideo.png" style="width:230px;height:60px;margin-left:auto;margin-right:auto;display:block;">
+		<img class="watchvideo" src="iconsfont/watchvideo.png" style="">
 	</div>
 	<div class="next4">
 		<p class="text4" style="color:#4A4A4A;">Последние Новости</p>
 		<img style="margin-left:auto;margin-right:auto;display: block;width:50px;height:8px;padding-bottom:40px" src="images/palocka.png">
-		<div class="slojnaidich " style="display:grid; ">
-			
-			<div class="Nikita" /* first *\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:443px;background-image:url(images/domnatelefone.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
-				<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
-				<div class="Nikita2" style="position:absolute; bottom:0px ;  text-align:center;width:270px;height:40px;vertical-align:middle"> 
-					<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>3Д в брендинге</strong></p>
+		<div class="slojnaidich " style=" ">
+			<figure>
+				<div class="Nikita" /* first *\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:443px;background-image:url(images/domnatelefone.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+					<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
+					<div class="Nikita2" style="position:absolute; bottom:0px ;  text-align:center;width:270px;height:40px;vertical-align:middle"> 
+						<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>3Д в брендинге</strong></p>
+					</div>				
 				</div>
-				
-			</div>
-			<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:341px;background-image:url(images/phone.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
-				<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
-				<div class="Nikita2" style="position:absolute; bottom:0px ;  text-align:center;width:270px;height:40px;vertical-align:middle"> 
-					<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Контекстная реклама</strong></p>
+			</figure>
+			<figure>
+				<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:341px;background-image:url(images/phone.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+					<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
+					<div class="Nikita2" style="position:absolute; bottom:0px ;  text-align:center;width:270px;height:40px;vertical-align:middle"> 
+						<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Контекстная реклама</strong></p>
+					</div>
 				</div>
-			</div>
-			<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:383px;background-image:url(images/olen.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
-				<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
-				<div class="Nikita2" style="position:absolute; bottom:0px ;  text-align:center;width:270px;height:40px;vertical-align:middle ;"> 
-						<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Графика</strong></p>					
+			</figure>
+			<figure>
+				<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:383px;background-image:url(images/olen.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+					<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
+					<div class="Nikita2" style="position:absolute; bottom:0px ;  text-align:center;width:270px;height:40px;vertical-align:middle ;"> 
+							<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Графика</strong></p>					
+					</div>
 				</div>
-			</div>
-			<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:210px;background-image:url(images/ludi.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+			</figure>
+			<figure>
+			<div class="Nikita" /*second*\ style="page-break-after:avoid;cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:210px;background-image:url(images/ludi.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
 				<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
 				<div class="Nikita2" style="position:absolute; bottom:0px ; text-align:center;width:270px;height:40px;vertical-align:middle"> 
 					<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Корпоративная культура</strong></p>
 				</div>
 			</div>
-			<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:197px;background-image:url(images/riba.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
-				<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
-				<div class="Nikita2" style="position:absolute; bottom:0px ; text-align:center;width:270px;height:40px;vertical-align:middle"> 
-					<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Уникальный дизайн</strong></p>
+			</figure>
+			<figure>
+				<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:197px;background-image:url(images/riba.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+					<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
+					<div class="Nikita2" style="position:absolute; bottom:0px ; text-align:center;width:270px;height:40px;vertical-align:middle"> 
+						<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Уникальный дизайн</strong></p>
+					</div>
 				</div>
-			</div>
-			<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:341px;background-image:url(images/baba.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
-				<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
-				<div class="Nikita2" style="position:absolute; bottom:0px ; text-align:center;width:270px;height:40px;vertical-align:middle"> 
-					<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Взгляд со стороны</strong></p>
+			</figure>
+			<figure>
+				<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:341px;background-image:url(images/baba.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+					<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
+					<div class="Nikita2" style="position:absolute; bottom:0px ; text-align:center;width:270px;height:40px;vertical-align:middle"> 
+						<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Взгляд со стороны</strong></p>
+					</div>
 				</div>
-			</div>
-			<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:198px;background-image:url(images/image.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
-				<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
-				<div class="Nikita2" style="position:absolute; bottom:0px ;  text-align:center;width:270px;height:40px;vertical-align:middle"> 
-					<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Соц сети и их польза</strong></p>
+			</figure>
+			<figure>
+				<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:198px;background-image:url(images/image.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+					<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
+					<div class="Nikita2" style="position:absolute; bottom:0px ;  text-align:center;width:270px;height:40px;vertical-align:middle"> 
+						<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Соц сети и их польза</strong></p>
+					</div>
 				</div>
-			</div>
-			<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:436px;background-image:url(images/babailes.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
-				<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
-				<div class="Nikita2" style="position:absolute; bottom:0px ;  text-align:center;width:270px;height:40px;vertical-align:middle"> 
-					<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Эксклюзивность</strong></p>
-				</div>
-			</div>			
+			</figure>
+			<figure>
+				<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;margin-left:auto;margin-right:auto;width:270px;height:436px;background-image:url(images/babailes.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+					<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
+					<div class="Nikita2" style="position:absolute; bottom:0px ;  text-align:center;width:270px;height:40px;vertical-align:middle"> 
+						<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Эксклюзивность</strong></p>
+					</div>
+				</div>	
+			</figure>
 		</div>
 	</div>
 	<div class="next5">
 		<i class="fa-solid fa-quote-right" style="text-align:center;"></i>
 		<div style="position:relative">
-			<p class="item-12" style="color:#4A4A4A;font-size:24px;text-align:center;width:275px;margin-left:auto;margin-right:auto;font-family:Roboto Condensed;padding-top:25%;margin-top:0;"> Если нужно создавать либо повышать имидж компании, <br>то <strong style="color:#2B4074">диджитал-маркетинг</strong> является наиболее подходящим</p>
+			<p class="item-12" style="color:#4A4A4A;text-align:center;margin-left:auto;margin-right:auto;font-family:Roboto Condensed;;margin-top:0;"> Если нужно создавать либо повышать имидж компании, <br>то <strong style="color:#2B4074">диджитал-маркетинг</strong> является наиболее подходящим</p>
 		</div>
 		<p style="text-align:center;font-family:Roboto Condensed;color:#4A4A4A;font-size:20px;margin-top:20px"><strong>- Маргарита Акулич</strong></p>
 		<div style=" display:flex; justify-content: space-around; margin-top:40px; width:50px ; margin-left:auto;margin-right:auto;padding-bottom:40px">
@@ -700,7 +766,7 @@
 			<img src="images/download.png"style="height:55px;width:83px;margin-left:auto;margin-right:auto;display:block;">
 		</div>
 		<div class="next6">
-			<p class="textend" style="">Мы хотели бы услышать все о вашем проекте.<br>Свяжись с нами.</p>
+			<p class="textend" style="">Мы хотели бы услышать все о вашем проекте.Свяжись с нами.</p>
 			<a href="https://programming.org.ua/ua" target="_blank">
 				<i class="fa-brands fa-facebook-f" style="text-align:center;margin-top:43px"></i>
 			</a>
