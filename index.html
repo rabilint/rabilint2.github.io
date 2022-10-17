@@ -280,6 +280,7 @@
 			height:1650px;
 			display: grid;
 		}
+		
 		figure {
 			break-inside: avoid;
 			width:270px;
@@ -403,10 +404,45 @@
 			line-height: 94%;
 			letter-spacing: 2px;
 		}
+		.k{
+			width:469.68px;height:417.66px;
+		}
+		.kotek{
+			width:135.3px;height:61.59px;
+			display: inline-block;
+		}
+		.social{
+			width:560px;height:57px;
+			grid-template-columns: 25% 25% 25% 25%;
+			grid-gap: 2px;
+			position:absolute;
+			left:50%;
+			transform:translate(-50%);
+
+			
+		}
+		.socialico{
+			border: 1px solid #7EBF84;;
+			padding-top:25px;
+			margin:0px;
+			width:141px;
+			height:51px;
+		}
 	 }
 	@media only screen and (max-width: 425px) {
 		.next1{
 			height:3150px;
+		}
+		.social{
+			width:25px;height:144px;
+			margin-top:16px
+			
+		}
+		.k{
+			width:253.88px;height:226.99px;
+		}
+		.kotek{
+			width:73px;height:33px
 		}
 		.textend{
 			display: inline-block;
@@ -638,29 +674,29 @@
 	</div>
 	<div  class="span" >
 		<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/laq.png); background-size:100% 100%;">
-			<img class="boba" src="iconsfont/dichnext3.png" style="width:253.88px;height:226.99px;">
-			<img class="boba" src="iconsfont/infoandlupa.png" style="position: absolute;width:73px;height:33px">			
+			<img class="boba k" src="iconsfont/dichnext3.png" >
+			<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
 		</div>
 		<p class="textOP"><strong>Lalique бутик</strong></p>
 	</div>
 	<div  class="span" >
 		<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/dom.png); background-size:100% 100%;">
-			<img class="boba" src="iconsfont/dichnext3.png" style="width:253.88px;height:226.99px;">
-			<img class="boba" src="iconsfont/infoandlupa.png" style="position: absolute;width:73px;height:33px">			
+			<img class="boba k" src="iconsfont/dichnext3.png" >
+			<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
 		</div>
 		<p class="textOP"><strong>Строительство домов</strong></p>
 	</div>
 	<div class="span" >
 		<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/cafe.png); background-size:100% 100%;">
-			<img class="boba" src="iconsfont/dichnext3.png" style="width:253.88px;height:226.99px;">
-			<img class="boba" src="iconsfont/infoandlupa.png" style="position: absolute;width:73px;height:33px">			
+			<img class="boba k" src="iconsfont/dichnext3.png" >
+			<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
 		</div>
 		<p class="textOP"><strong>Кофейня</strong></p>
 	</div>
 	<div class="span" >
 		<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/bitch.png); background-size:100% 100%;">
-			<img class="boba" src="iconsfont/dichnext3.png" style="width:253.88px;height:226.99px;">
-			<img class="boba" src="iconsfont/infoandlupa.png" style="position: absolute;width:73px;height:33px">			
+			<img class="boba k" src="iconsfont/dichnext3.png" >
+			<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
 		</div>
 		<p class="textOP"><strong>Уникальные туры</strong></p>
 	</div>		
@@ -765,20 +801,30 @@
 		<div class="dich2">
 			<img src="images/download.png"style="height:55px;width:83px;margin-left:auto;margin-right:auto;display:block;">
 		</div>
-		<div class="next6">
-			<p class="textend" style="">Мы хотели бы услышать все о вашем проекте.Свяжись с нами.</p>
-			<a href="https://programming.org.ua/ua" target="_blank">
-				<i class="fa-brands fa-facebook-f" style="text-align:center;margin-top:43px"></i>
-			</a>
-			<a href="https://programming.org.ua/ua" target="_blank">
-				<i class="fa-brands fa-google" style="text-align:center;margin-top:16px"></i>
-			</a>
-			<a href="https://programming.org.ua/ua" target="_blank">
-				<i class="fa-brands fa-twitter"style="text-align:center;margin-top:16px"></i>
-			</a>
-			<a href="https://programming.org.ua/ua" target="_blank">
-				<i class="fa-brands fa-pinterest"style="text-align:center;margin-top:16px"></i>
-			</a>
+		<div class="next6" style="position:relative">
+			<p class="textend">Мы хотели бы услышать все о вашем проекте.Свяжись с нами.</p>
+			<div class="social" style="display:grid">
+				<figure>
+					<a href="https://programming.org.ua/ua" target="_blank">
+						<i class="fa-brands fa-facebook-f socialico" style="text-align:center;vertical-align: baseline;border-left:None"></i>
+					</a>
+				</figure>
+				<figure>
+					<a href="https://programming.org.ua/ua" target="_blank">
+						<i class="fa-brands fa-google socialico" style="text-align:center;"></i>
+					</a>
+				</figure>
+				<figure>
+					<a href="https://programming.org.ua/ua" target="_blank">
+						<i class="fa-brands fa-twitter socialico"style="text-align:center;vertical-align: baseline;"></i>
+					</a>
+				</figure>
+				<figure>
+					<a href="https://programming.org.ua/ua" target="_blank">
+						<i class="fa-brands fa-pinterest socialico"style="text-align:center;vertical-align: text-top;border-right:None"></i>
+					</a>
+				</figure>
+			</div>
 			<p style="color:#FFFFFF;letter-spacing: 2px;font-family:Roboto Condensed;text-align:center;margin-top:46px;font-size:18px"><strong>КОНТАКТЫ</strong></p>
 			<a style="text-align:center" href="tel:+380 66 886 4725" target="_blank">
 				+80 555 55 66
