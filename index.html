@@ -101,7 +101,7 @@
 
 	.content-box{
 		border :solid;
-
+		height:167px;
 		margin-left:10px;
 		margin-right:10px;
 		border-color:#F9F6E5;
@@ -291,6 +291,15 @@
 	@media only screen and (max-width: 1024px) {
 		.middle{
 			height:465px;
+		}		
+		.HON{
+			visibility:hidden;
+			width:0px;
+			height:0px;
+		}
+		.HON1{
+			visibility:visible;
+			margin: 31px 46px;
 		}
 		.texthidden{
 			visibility:visible;
@@ -325,13 +334,86 @@
 			margin-bottom:31px;
 		}
 		.bottem{
-			
+			height:187px;
 		}
+		.text2{
+			width:412px;
+		}
+		.text10{
+			width:427px;
+			text-align:left;
+			margin-left:46px;
+		}
+		.text4{
+			font-size:48px;
+			margin-bottom:30px;
+		}
+		.text3{
+			width:690px;
+			text-align:left;
+			margin-left:46px;
+		}
+		.text5{
+			text-align:left;
+			margin-left:46px;
+			padding-top:0px;
+		}
+		.recallme{
+			margin-top:60px;
+			column-count: 2;
+		}
+		.slojnaidich{
+			  column-count: 2;
+
+		}
+		.left{
+			margin-left:25%;
+			width:268px;
+		}
+		.right{
+			margin-right:25%;
+			width:268px;
+		}
+		.grid1 {
+			grid-template-columns: 50% 50%;			
+		}
+		.next1{
+			height:1653px;
+		}
+		p.bimba {
+			visibility: hidden;
+			width:196px;
+			font-size:16px;
+			text-align:center;
+			margin-left:auto;
+			margin-right:auto;
+			display:block;
+			font-family:Dosis
+		}
+		.next4{
+			height:1745px;
+		}
+		.magazini{
+			column-count:2;
+		}
+		.RenoDaster{
+			width:317.23px;
+			height:282.91px;
+		}
+		
 	}
 	@media only screen and (max-width: 768px) {
 		.next1{
 			height:1650px;
 			display: grid;
+		}
+		.HON{
+			visibility:visible;
+			width:0px;
+			height:0px;
+		}
+		.HON1{
+			visibility:hidden;
 		}
 		.texthidden{
 			height:0px;
@@ -395,10 +477,7 @@
 		.text2{
 			width:580px;
 		}
-		.grid1 {
-			grid-template-columns: 50% 50%;
-			
-		}
+		
 		.text3{
 			width:560px;
 		}
@@ -428,31 +507,17 @@
 		.dich{
 			margin:30px;
 		}
-		p.bimba {
-			visibility: hidden;
-			width:196px;
-			font-size:16px;
-			text-align:center;
-			margin-left:auto;
-			margin-right:auto;
-			display:block;
-			font-family:Dosis
-		}
+		
 		.textOP{
 			font-size:20px;
 		}
-		.slojnaidich{
-			  column-count: 2;
-
-		}
+		
 		.textend2{
 			column-count:2;
 			width:100%;
 			margin-top:100px;
 		}
-		.next4{
-			height:1745px;
-		}
+		
 		.watchvideo{
 			width:230px;height:60px;
 			margin-left:auto;margin-right:auto;margin-top:84px;display:block;
@@ -510,8 +575,8 @@
 			height:42px;
 		}
 		.strelocka{
-		top:17px;
-		right:15px;
+			top:17px;
+			right:15px;
 		}
 		.linkbebra{
 			width:auto;
@@ -735,19 +800,23 @@
 			<span class="dot "> </span> <img style="width:10px ; height: 10px" src="iconsfont/circle.png"> <span class="dot"> </span> 
 		</div>
 	</div>
-	<div class="bottem">
-		<h1 class="text2"> Вы полюбите нас с первой встречи!</h1>
-		<p class="text3"> Мы предоставляем комплексный подход к продвижению компании , продуктов и услуг в цифровой сфере </p>
-		<img style="margin-left: auto ; margin-right: auto; display: block; height:50px ; width:200px" src="images/recall me.png">
-
+	<div class="bottem" style="position:relative;">
+		<div class="recallme"> 
+			<div style="page-break-inside: avoid;">
+				<h1 class="text2" > Вы полюбите нас с первой встречи!</h1>
+				<p class="text10" > Мы предоставляем комплексный подход к продвижению компании , продуктов и услуг в цифровой сфере </p>
+			</div>
+			<img style="page-break-inside: avoid;margin-left: auto ; margin-right: auto; display: block; height:50px ; width:200px" src="images/recall me.png">
+		</div>
 	</div>
 	<div class="next1">
 		<p class="text4">Сервис</p>
-		<img style="margin-left:auto;margin-right:auto;display: block;width:100px" src="images/palocka.png">
+		<img class="HON" style="margin-left:auto;margin-right:auto;display: block;width:100px" src="images/palocka.png">
 		<p class="text5">От идеи до незабываемого и измеримого результата.</p>
+		<img class="HON1" style="display: block;width:100px" src="images/palocka.png">
 		<p class="text3" style="color:#797979;font-family: Roboto ;">Интеграция безупречного производства, передовых технологий и тщательного измерения производительности </p>
 		<div class="grid1" style="display: grid;">
-			<div class="content-box " style="cursor: pointer;padding-bottom:18%;padding-top:25%">
+			<div class="content-box " style="cursor: pointer;padding-top:18%;padding-bottom:15%">
 				<img src="iconsfont/1ICO.png" style="margin-left:auto;margin-right:auto;display: block;width:58px;height:63px;">
 				<p style="text-align:center;font-family:Roboto Condensed;font-size:16px;color:#4A4A4A;line-height:18.75px;letter-spacing:2px;"><strong>СТРАТЕГИЯ</strong></p>
 				<p class="bimba" style="text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
@@ -802,34 +871,36 @@
 		<p id="c1" class="text4" style="color:#fff">Наши Проекты</p>
 		<img class="palocka2" src="iconsfont/unknown.png" >
 	</div>
-	<div  class="span" >
-		<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/laq.png); background-size:100% 100%;">
-			<img class="boba k" src="iconsfont/dichnext3.png" >
-			<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
+		<div class="magazini">
+			<div  class="span" >
+				<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/laq.png); background-size:100% 100%;">
+					<img class="boba k" src="iconsfont/dichnext3.png" >
+					<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
+				</div>
+				<p class="textOP"><strong>Lalique бутик</strong></p>
+			</div>
+			<div  class="span" >
+				<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/dom.png); background-size:100% 100%;">
+					<img class="boba k" src="iconsfont/dichnext3.png" >
+					<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
+				</div>
+				<p class="textOP"><strong>Строительство домов</strong></p>
+			</div>
+			<div class="span" >
+				<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/cafe.png); background-size:100% 100%;">
+					<img class="boba k" src="iconsfont/dichnext3.png" >
+					<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
+				</div>
+				<p class="textOP"><strong>Кофейня</strong></p>
+			</div>
+			<div class="span" >
+				<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/bitch.png); background-size:100% 100%;">
+					<img class="boba k" src="iconsfont/dichnext3.png" >
+					<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
+				</div>
+				<p class="textOP"><strong>Уникальные туры</strong></p>
+			</div>
 		</div>
-		<p class="textOP"><strong>Lalique бутик</strong></p>
-	</div>
-	<div  class="span" >
-		<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/dom.png); background-size:100% 100%;">
-			<img class="boba k" src="iconsfont/dichnext3.png" >
-			<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
-		</div>
-		<p class="textOP"><strong>Строительство домов</strong></p>
-	</div>
-	<div class="span" >
-		<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/cafe.png); background-size:100% 100%;">
-			<img class="boba k" src="iconsfont/dichnext3.png" >
-			<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
-		</div>
-		<p class="textOP"><strong>Кофейня</strong></p>
-	</div>
-	<div class="span" >
-		<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/bitch.png); background-size:100% 100%;">
-			<img class="boba k" src="iconsfont/dichnext3.png" >
-			<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
-		</div>
-		<p class="textOP"><strong>Уникальные туры</strong></p>
-	</div>		
 	</div>
 	<div class="next3" >
 		<img class="ludi" src="iconsfont/people.png" style=" margin-left:auto;margin-right:auto;display:block;">
@@ -850,7 +921,7 @@
 		<img style="margin-left:auto;margin-right:auto;display: block;width:50px;height:8px;padding-bottom:40px" src="images/palocka.png">
 		<div class="slojnaidich " style=" ">
 			<figure class="left">
-				<div class="Nikita" /* first *\ style="cursor: pointer;border-radius: 2%;width:270px;height:443px;background-image:url(images/domnatelefone.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+				<div class="Nikita" /* first *\ style="cursor: pointer;border-radius: 2%;page-break-inside: avoid;width:270px;height:443px;background-image:url(images/domnatelefone.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
 					<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
 					<div class="Nikita2" style="position:absolute; bottom:0px ;  text-align:center;width:270px;height:40px;vertical-align:middle"> 
 						<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>3Д в брендинге</strong></p>
@@ -858,7 +929,7 @@
 				</div>
 			</figure>
 			<figure class="left">
-				<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;width:270px;height:341px;background-image:url(images/phone.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+				<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;page-break-inside: avoid;width:270px;height:341px;background-image:url(images/phone.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
 					<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
 					<div class="Nikita2" style="position:absolute; bottom:0px ;  text-align:center;width:270px;height:40px;vertical-align:middle"> 
 						<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Контекстная реклама</strong></p>
@@ -866,7 +937,7 @@
 				</div>
 			</figure>
 			<figure class="left">
-				<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;width:270px;height:383px;background-image:url(images/olen.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+				<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;page-break-inside: avoid;width:270px;height:383px;background-image:url(images/olen.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
 					<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
 					<div class="Nikita2" style="position:absolute; bottom:0px ;  text-align:center;width:270px;height:40px;vertical-align:middle ;"> 
 							<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Графика</strong></p>					
@@ -874,7 +945,7 @@
 				</div>
 			</figure>
 			<figure class="right">
-				<div class="Nikita" /*second*\ style="page-break-after:avoid;cursor: pointer;border-radius: 2%;width:270px;height:210px;background-image:url(images/ludi.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+				<div class="Nikita" /*second*\ style="page-break-after:avoid;page-break-inside: avoid;cursor: pointer;border-radius: 2%;width:270px;height:210px;background-image:url(images/ludi.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
 					<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
 					<div class="Nikita2" style="position:absolute; bottom:0px ; text-align:center;width:270px;height:40px;vertical-align:middle"> 
 						<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Корпоративная культура</strong></p>
@@ -882,7 +953,7 @@
 				</div>
 			</figure>
 			<figure class="right">
-				<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;height:197px;width:270px;background-image:url(images/riba.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+				<div class="Nikita" /*second*\ style="cursor: pointer;page-break-inside: avoid;border-radius: 2%;height:197px;width:270px;background-image:url(images/riba.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
 					<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
 					<div class="Nikita2" style="position:absolute; bottom:0px ; text-align:center;width:270px;height:40px;vertical-align:middle"> 
 						<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Уникальный дизайн</strong></p>
@@ -890,7 +961,7 @@
 				</div>
 			</figure>
 			<figure class="right">
-				<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;width:270px;height:341px;background-image:url(images/baba.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+				<div class="Nikita" /*second*\ style="cursor: pointer;page-break-inside: avoid;border-radius: 2%;width:270px;height:341px;background-image:url(images/baba.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
 					<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
 					<div class="Nikita2" style="position:absolute; bottom:0px ; text-align:center;width:270px;height:40px;vertical-align:middle"> 
 						<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Взгляд со стороны</strong></p>
@@ -898,7 +969,7 @@
 				</div>
 			</figure>
 			<figure class="right">
-				<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;width:270px;height:198px;background-image:url(images/image.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+				<div class="Nikita" /*second*\ style="cursor: pointer;page-break-inside: avoid;border-radius: 2%;width:270px;height:198px;background-image:url(images/image.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
 					<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
 					<div class="Nikita2" style="position:absolute; bottom:0px ;  text-align:center;width:270px;height:40px;vertical-align:middle"> 
 						<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Соц сети и их польза</strong></p>
@@ -906,7 +977,7 @@
 				</div>
 			</figure>
 			<figure class="right">
-				<div class="Nikita" /*second*\ style="cursor: pointer;border-radius: 2%;width:270px;height:436px;background-image:url(images/babailes.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
+				<div class="Nikita" /*second*\ style="cursor: pointer;page-break-inside: avoid;border-radius: 2%;width:270px;height:436px;background-image:url(images/babailes.png); background-size:100% 100% ;margin-bottom:20px;position:relative">
 					<img class="infoimg" src="iconsfont/info.png" style="position:absolute;top:50%;left:50%;width:27.5px;height:27.5px;transform:translate(-50%,-50%)">
 					<div class="Nikita2" style="position:absolute; bottom:0px ;  text-align:center;width:270px;height:40px;vertical-align:middle"> 
 						<p class="Nikita2" style="font-size:18px;font-family:Roboto Condensed;margin:0;margin-top:10px"><strong>Эксклюзивность</strong></p>
