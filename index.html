@@ -421,6 +421,8 @@
 			align-items: center;
 			justify-content: center;
 			height:239px;
+			margin:0px auto;
+
 	
 		}
 		.next2{
@@ -439,9 +441,8 @@
 		}
 		.magazini{
 			column-count:4;
-			display:flex;
-			align-items: center;
-			justify-content: space-evenly;
+			display:grid;
+			grid-template-columns: 25% 25% 25% 25%;
 		}
 		#c1{
 			text-align:center;
@@ -561,11 +562,44 @@
 			text-align:start;
 			
 		}
+		.f{
+			width:111px;
+			text-align:left;
+			margin-left:150px;
+		}
+		.s{
+			width:115px;
+			margin-left:30%;
+			text-align:left;
+		}
+		.t{
+			width:201px;
+			text-align:left;
+		}
+		.fo{
+			width:146px;
+			text-align:left;
+		}
+		.last{
+			height:42px;
+		}
+		.strelocka{
+			top:17px;
+			right:15px;
+		}
+		.Up{
+			top:11px;
+			right:56px;
+			margin-top:0px;
+			font-size:16px;
+			
+		}
 	}
 	@media only screen and (max-width: 1024px) {
 		.middle{
-			height:465px;
+			height:623px;
 		}	
+		
 		#tal{
 			text-align:center;
 		}
@@ -573,11 +607,38 @@
 			margin-top:16px;
 			
 		}
+		#fi1{
+			margin-top:0px;
+		}
+		#fi2{
+			height:90px;
+		}
+		.f{
+			width:111px;
+			text-align:left;
+			margin-left:150px;
+		}
+		.s{
+			width:115px;
+			margin-left:30%;
+			text-align:left;
+		}
+		.t{
+			width:201px;
+			text-align:left;
+		}
+		.fo{
+			width:146px;
+			text-align:left;
+		}
+		.social{
+			width:956px;
+		}
 		.socialico{
 			border: 1px solid #7EBF84;;
 			padding-top:25px;
 			margin:0px;
-			width:130px;
+			width:240px;
 			height:51px;
 		}
 		#HHH{
@@ -585,17 +646,20 @@
 			padding-bottom:40px;
 		}
 		#HoN{
+			visibility:visible;
+			width:230px;
+			height:60px;
+			margin-left:20px;
+		}
+		#HoN1{
 			visibility:hidden;
 			width:0px;
 			height:0px;
 		}
-		#HoN1{
-			visibility:visible;
-			width:230px;
-			height:230px;
-		}
 		.content-box{
-			height:170px;
+			padding-top:35px;
+			padding-bottom:30px;
+			margin:0px;
 		}
 		.disco{
 			margin-top:80px
@@ -657,7 +721,7 @@
 			margin-top:30px;
 		}
 		.text1{
-			font-size:60px;
+			font-size:84px;
 			height:115px;
 			line-height:85%;
 			margin-bottom:31px;
@@ -690,29 +754,28 @@
 			column-count: 2;
 		}
 		.slojnaidich{
-			  column-count: 2;
+			  column-count: 3;
+			  height:1368px;
 
 		}
-		.left{
-			margin-left:25%;
-			width:268px;
-		}
-		.right{
-			margin-right:25%;
-			width:268px;
-		}
+		
 		.grid1 {
-			grid-template-columns: 50% 50%;			
+			grid-template-columns: 25% 25% 25% 25%;		
+			width:auto;
+			height:517px;
+			margin-top:auto;
 		}
 		.next1{
-			height:1653px;
+			height:969px;
+			grid-template-columns: 100%;		
+			grid-template-rows: 362px 546px;
 		}
 		
 		.next4{
-			height:1745px;
+			height:1368px;
 		}
 		.magazini{
-			column-count:2;
+			grid-template-columns: 50% 50%;
 		}
 		.text6{
 			margin-left:20px;
@@ -721,10 +784,12 @@
 		.RenoDaster{
 			width:317.23px;
 			height:282.91px;
+			margin:
 		}
 		.textOP{
 			font-size:20px;
 			margin:30px auto;
+			width:200px
 		}
 		
 		.item-12{
@@ -735,7 +800,7 @@
 			line-height:85%;
 			font-size:18px;
 			font-family: Roboto;
-			height:235px;
+			height:197px;
 			width:407px;
 		}
 		.next6{
@@ -747,6 +812,8 @@
 		}
 		.ludi{
 			margin-right:0px;
+			width:395px;
+			height:380px;
 		}
 		.watchvideo{
 			width:230px;
@@ -760,19 +827,20 @@
 		}
 		.textend{
 			display: inline-block;
-			margin-top:85px;
 			color:#FFFFFF;
 			font-family:Roboto;
 			font-size:24px;
-			padding-left:15%;
-
+			padding-left:43px;
+			padding-bottom:80px;
+			padding-top:158px;
+			margin:0px;
 			line-height: 94%;
 			letter-spacing: 2px;
 		}
 		
 		
 		.textend2{
-			column-count:2;
+			column-count:4;
 			width:100%;
 			margin-top:100px;
 		}
@@ -783,6 +851,7 @@
 			top:17px;
 			right:15px;
 		}
+
 		.linkbebra{
 			width:auto;
 			height:42px;
@@ -800,11 +869,36 @@
 		.DiGiImg{
 			margin:17px 44px;
 		}
-		
+		#left2{
+			margin-right:10px
+		}
+		#right2{
+			margin-left:10px;
+		}
+
+		#textright2{
+			margin-left:80px;
+		}
+		#textleft2{
+			margin-right:80px;
+		}
 	}
 	@media only screen and (max-width: 768px) {
 		.next1{
 			height:1549px;
+		}
+		.left{
+			margin-left:25%;
+			width:268px;
+		}
+		.right{
+			margin-right:25%;
+			width:268px;
+		}
+		#HoN1{
+			visibility:visible;
+			width:230px;
+			height:230px;
 		}
 		.HON{
 			visibility:hidden;
@@ -1243,7 +1337,7 @@
 		</div>
 	</div>
 	<div class="next1">
-		<div>
+		<div >
 			<p class="text4">Сервис</p>
 			<img class="HON" style="margin-left:auto;margin-right:auto;display: block;width:100px" src="images/palocka.png">
 			<p class="text5">От идеи до незабываемого и измеримого результата.</p>
@@ -1308,32 +1402,32 @@
 	</div>
 		<div class="magazini">
 			<div  class="span" >
-				<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/laq.png); background-size:100% 100%;">
+				<div id="left2" class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/laq.png); background-size:100% 100%;">
 					<img class="boba k" src="iconsfont/dichnext3.png" >
 					<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
 				</div>
-				<p class="textOP"><strong>Lalique бутик</strong></p>
+				<p id="textleft2" class="textOP"><strong>Lalique бутик</strong></p>
 			</div>
 			<div  class="span" >
-				<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/dom.png); background-size:100% 100%;">
+				<div id="right2" class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/dom.png); background-size:100% 100%;">
 					<img class="boba k" src="iconsfont/dichnext3.png" >
 					<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
 				</div>
-				<p class="textOP"><strong>Строительство домов</strong></p>
+				<p id="textright2" class="textOP"><strong>Строительство домов</strong></p>
 			</div>
 			<div class="span" >
-				<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/cafe.png); background-size:100% 100%;">
+				<div id="left2" class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/cafe.png); background-size:100% 100%;">
 					<img class="boba k" src="iconsfont/dichnext3.png" >
 					<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
 				</div>
-				<p class="textOP"><strong>Кофейня</strong></p>
+				<p id="textleft2" class="textOP"><strong>Кофейня</strong></p>
 			</div>
 			<div class="span" >
-				<div class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/bitch.png); background-size:100% 100%;">
+				<div id="right2" class="RenoDaster" style="cursor: pointer;background-image:url(iconsfont/bitch.png); background-size:100% 100%;">
 					<img class="boba k" src="iconsfont/dichnext3.png" >
 					<img class="boba kotek" src="iconsfont/infoandlupa.png" style="position: absolute;">			
 				</div>
-				<p class="textOP"><strong>Уникальные туры</strong></p>
+				<p id="textright2" class="textOP"><strong>Уникальные туры</strong></p>
 			</div>
 		</div>
 	</div>
@@ -1464,30 +1558,30 @@
 				</a>
 			</div>
 			<div class="textend2">
-				<figure id="fi1" class="figure1">
-					<p style="color:#FFFFFF;letter-spacing: 2px;font-family:Roboto Condensed;text-align:center;margin-top:0px;font-size:18px"><strong>КОНТАКТЫ</strong></p>
-					<a id="tal" class="link" style="" href="tel:+380 66 886 4725" target="_blank">
+				<figure id="fi1" style="page-break-inside: avoid;" class="figure1 f">
+					<p style="color:#FFFFFF;letter-spacing: 2px;font-family:Roboto Condensed;;margin-top:0px;font-size:18px"><strong>КОНТАКТЫ</strong></p>
+					<a id="tal "  class="link " style="" href="tel:+380 66 886 4725" target="_blank">
 						+80 555 55 66
 					</a>
-					<a id="tal" class="link" style=";margin-top:5px" href="mailto:digi@gmail.com" target="_blank">
+					<a id="tal "  class="link " style=";margin-top:5px" href="mailto:digi@gmail.com" target="_blank">
 						digi@gmail.com
 					</a>
 				</figure>
-				<figure id="fi2" class="figure1">
-					<p  style="color:#FFFFFF;font-family:Roboto Condensed;letter-spacing: 2px;font-size:18px;line-height: 100%;margin-top:24px;text-align:center"> <strong>АДРЕС</strong> </p>
-					<a id="tal" class="link" style="text-align:center;margin-top:5px" href="https://www.google.com/maps/place/%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%9D%D0%B0%D1%83%D0%BA%D0%B8,+107,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.3749766,30.5418338,19.75z/data=!4m5!3m4!1s0x40d4c61bce9b3359:0xa969ee09baa1495!8m2!3d50.3749576!4d30.5421339" target="_blank">
+				<figure id="fi2" style="page-break-inside: avoid;" class="figure1 s">
+					<p  style="color:#FFFFFF;font-family:Roboto Condensed;letter-spacing: 2px;font-size:18px;line-height: 100%;margin-top:24px;"> <strong>АДРЕС</strong> </p>
+					<a id="tal"  class="link " style=";margin-top:5px" href="https://www.google.com/maps/place/%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%9D%D0%B0%D1%83%D0%BA%D0%B8,+107,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.3749766,30.5418338,19.75z/data=!4m5!3m4!1s0x40d4c61bce9b3359:0xa969ee09baa1495!8m2!3d50.3749576!4d30.5421339" target="_blank">
 						Пр. Науки 107 <br>Kиев / Украина
 					</a>
 				</figure>
-				<figure class="figure1">
-					<p  style="color:#FFFFFF;font-family:Roboto Condensed;letter-spacing: 2px;font-size:18px;line-height: 100%;margin-top:24px;text-align:center"> <strong>ПОМОЩЬ</strong> </p>
-					<p id="tal" style="color:#FFFFFF;font-family:Roboto Condensed;letter-spacing: 2px;font-size:16px;line-height: 100%;margin-top:24px">Как с нами связаться? <br> Что такое диджитал? <br> Стоимость услуг </p>			
+				<figure style="page-break-inside: avoid;" class="figure1 t">
+					<p  style="color:#FFFFFF;font-family:Roboto Condensed;letter-spacing: 2px;font-size:18px;line-height: 100%;margin-top:24px;r"> <strong>ПОМОЩЬ</strong> </p>
+					<p id="tal "  style="color:#FFFFFF;font-family:Roboto Condensed;letter-spacing: 2px;font-size:16px;line-height: 100%;margin-top:24px">Как с нами связаться? <br> Что такое диджитал? <br> Стоимость услуг </p>			
 				</figure>
-				<figure class="figure1">
-					<p style="color:#FFFFFF;font-family:Roboto Condensed;letter-spacing: 2px;font-size:18px;line-height: 100%;margin-top:24px;text-align:center;"> <strong>МЕНЮ</strong> </p>
-					<p id="tal" style="color:#FFFFFF;font-family:Roboto Condensed;letter-spacing: 2px;font-size:16px;line-height: 100%;margin-top:24px;margin-bottom:0px"><a class="link" href="#c1">Наши проекты</a> </p>
-					<p id="tal" style="color:#FFFFFF;font-family:Roboto Condensed;letter-spacing: 2px;font-size:16px;line-height: 100%;margin-bottom:0px;margin-top:0px"><a class="link" href="#c2">Команда</a> </p>
-					<p id="tal" style="color:#FFFFFF;font-family:Roboto Condensed;letter-spacing: 2px;font-size:16px;line-height: 100%;margin-top:0px">Блог </p>
+				<figure style="page-break-inside: avoid;" class="figure1 fo">
+					<p style="color:#FFFFFF;font-family:Roboto Condensed;letter-spacing: 2px;font-size:18px;line-height: 100%;margin-top:24px;"> <strong>МЕНЮ</strong> </p>
+					<p id="tal " style="color:#FFFFFF;font-family:Roboto Condensed;letter-spacing: 2px;font-size:16px;line-height: 100%;margin-top:24px;margin-bottom:0px"><a class="link " href="#c1">Наши проекты</a> </p>
+					<p id="tal " style="color:#FFFFFF;font-family:Roboto Condensed;letter-spacing: 2px;font-size:16px;line-height: 100%;margin-bottom:0px;margin-top:0px"><a class="link " href="#c2">Команда</a> </p>
+					<p id="tal "  style="color:#FFFFFF;font-family:Roboto Condensed;letter-spacing: 2px;font-size:16px;line-height: 100%;margin-top:0px">Блог </p>
 				</figure>
 			</div>
 		</div>
