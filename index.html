@@ -9,17 +9,23 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.youtube.com/watch?v=G510jeWiaV0&ab_channel=UkrTrashDub2.0/" />
   <meta property="og:image" content="iconsfont/catgirl.png"/>
+  <meta property="og:image:width" content="765" />
+  <meta property="og:image:height" content="765" />
   <meta property="og:description" content="Here free catgirl !!! It`s totaly true !!!"/>
   <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
   <link rel = "icon" src= "images/logo.png" type = "image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%20Condensed">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis ">
   <script src="https://kit.fontawesome.com/2c17a3c4e9.js" crossorigin="anonymous"></script>
+  
   <link rel="stylesheet" href="css/style.css">
   <style>
-
+		
 	  .wrapper{
 		display: flex;
 		flex-direction: column
@@ -140,8 +146,25 @@
 		visibility: visible;
 		
 	}
-
-	
+	.main-description{
+		color:#FFFFFF;
+		font-size:18px;
+	}
+	.main-description{
+		
+		width:587px;
+		text-align:center;
+		font-size:18px;
+		height:38px;
+		position:absolute;
+		left:50%;
+		transform:translate(-50%,-50%)
+		
+	}
+	.owl-stage{
+		height:0px;
+		
+	}
 	.strelocka{
 		box-shadow:inset 2px 2px #2B4074;
 	}
@@ -272,6 +295,68 @@
 		margin-left:auto;margin-right:auto;display:block;
 		height:8px;width:50px;padding-bottom:10%;
 	}
+	.arrow-button1 {
+	  position: relative;
+	  width: 70px;
+	  height: 70px;
+	  border:None;
+	  background-color: #2b4074;
+	}
+	.owl-next {
+	  position: absolute;
+	  width: 70px;
+	  height: 70px;
+	  z-index: 1;
+	  opacity: 0;
+	  top: 70px;
+	  transition: all 0.5s ease;
+	}
+	.owl-prev {
+	  position: absolute;
+	  width: 70px;
+	  height: 70px;
+	  z-index: 1;
+	  opacity: 0;
+	  transition: all 0.5s ease;
+	}
+	.arrow-button2 {
+	  width: 70px;
+	  height: 70px;
+	  border:None;
+	  background-color: #fff;
+	}
+	.arrows {
+	  display: flex;
+	  flex-direction: column;
+	  position: absolute;
+	  right: 0;
+	  top: 264px;
+	}
+	.circles {
+	  display: flex;
+	  max-width: 50px;
+	  justify-content: space-between;
+	  margin: 96px auto 79px;
+	}
+	.circle.active {
+	  background-color: #fff;
+	  border-radius: 50%;
+	}
+	.circle{
+		width:10px;
+		height:10px;
+	}
+	.circles {
+	  display: flex;
+	  height:10px;
+	  max-width: 50px;
+	  justify-content: space-between;
+	  margin: 96px auto 79px;
+	}
+	.circle{
+			width:10px;
+			margin-bottom:80px;
+		}
 	.link{
 		color:#FFFFFF;
 		text-decoration: None;
@@ -297,6 +382,11 @@
 	@media only screen and (max-width: 1920px) {
 		.dich{
 			margin:30px 150px;
+		}
+		.main-description{
+			font-size:24px;
+			visibility:visible;
+			width:886px;
 		}
 		.palchkidiv{
 			width:70px;
@@ -627,10 +717,7 @@
 			height:20px;
 			width:20px;
 		}
-		.circle{
-			width:100px;
-			margin-bottom:80px;
-		}
+		
 		#rec{
 			width:400px;
 			height:100px;
@@ -647,10 +734,7 @@
 		#jj{
 			width:50px;
 		}
-		.circle{
-			width:50px;
-			bottom: -27px;
-		}
+
 		.dot{
 			width:10px;
 			height:10px;
@@ -966,6 +1050,9 @@
 		#team{
 			width:493px;
 		}
+		.main-description{
+			font-size:18px;
+		}
 		.slojnaidich{
 			  column-count: 3;
 			  height:1368px;
@@ -1274,6 +1361,12 @@
 		.slojnaidich{
 			column-count:2;	
 			height:1745px;
+		}
+		.main-description{
+			
+			width:0%;
+			height:0px;
+			visibility:hidden;
 		}
 		.next4{
 			height:1745px;
@@ -2032,15 +2125,43 @@
 	<img id="ctop" class="DiGiImg" style=""src="images/download.png">	
 	</h1>
 	<div class="middle" style="position: relative;">
-		<p class="text1" > МЫСЛИ <br> ГЛОБАЛЬНО </p>
-		<p class="texthidden">Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении</p>
-		<img class="palca1"  src="images/unknown.png">  
-		<div class="palchkidiv" style="position:absolute;right:0px;top:50%;" ></div>
-		<img class="tblm" src="iconsfont/tblm.png">
-		<div class="circle">
-			<span class="dot "> </span> <img class="buble" src="iconsfont/circle.png"> <span class="dot"> </span> 
+		<p class="text1 item" > МЫСЛИ <br> ГЛОБАЛЬНО </p>
+		<div class="owl-carousel owl-carousel1">
+			<div class="item" style="height:60px">
+			  <p class="main-description">
+				Di Gi - это диджитал агентство полного цикла, направленное на самый
+				лучший результат наших клиентов в маркетинге, продажах и управлении
+			  </p>
+			</div>
+			<div class="item" style="height:60px">
+			  <p class="main-description">
+				Di Gi - это диджитал агентство полного цикла, направленное на самый
+				лучший результат наших клиентов в маркетинге, продажах и управлении
+			  </p>
+			</div>
+			<div class="item" style="height:60px">
+			  <p class="main-description">
+				Di Gi - это диджитал агентство полного цикла, направленное на самый
+				лучший результат наших клиентов в маркетинге, продажах и управлении
+			  </p>
+			</div>
 		</div>
-	</div>
+		<img class="palca1"  src="images/unknown.png">  
+		<div class="arrows owl-nav">
+			<button class="arrow-button1">
+			  <img src="images/forward.png" alt="forvard-arrow" />
+			</button>
+			<button class="arrow-button2">
+			  <img src="images/back.png" alt="back-arrow" />
+			</button>
+		</div>
+		<img class="tblm" src="iconsfont/tblm.png">
+		<div class="circles">
+			<img src="images/oval2.svg" alt="circle" class="circle" />
+			<img src="images/oval2.svg" alt="circle" class="circle" />
+			<img src="images/oval2.svg" alt="circle" class="circle" />
+      </div>
+    </div>
 	<div class="bottem" style="position:relative;">
 		<div class="recallme"> 
 			<div style="page-break-inside: avoid;">
@@ -2072,7 +2193,7 @@
 				<p class="bimba" style="cursor: pointer;font-family:Roboto Condensed;font-size:16px;text-align:center;letter-spacing: 2px;line-height: 18.75px;margin-bottom:0"><strong>ПОДРОБНЕЕ →</strong></p>
 			</div>
 			<div class="content-box " style="cursor: pointer;padding-top:18%;padding-bottom:15%;page-break-after:avoid;">
-				<img src="iconsfont/3ICO.png" style="margin-left:auto;display:block;margin-right:auto;width:58px;height:63px;">
+				<img src="iconsfont/3ICo.png" style="margin-left:auto;display:block;margin-right:auto;width:58px;height:63px;">
 				<p style="text-align:center;font-family:Roboto Condensed;font-size:16px;color:#4A4A4A;line-height:18.75px;letter-spacing:2px;"><strong>СОЦ СЕТИ</strong></p>
 				<p class="bimba" style="text-align:center;color:#9B9B9B;font-family:Dosis">Создадим уникальный и удобный дизайн..</p>
 				<p class="bimba" style="font-family:Roboto Condensed;font-size:16px;text-align:center;letter-spacing: 2px;line-height: 18.75px;margin-bottom:0"><strong>ПОДРОБНЕЕ →</strong></p>
@@ -2308,5 +2429,8 @@
 				<div class="strelocka" style="cursor: pointer;width:14.43px;height:13.5px;background:White; transform: rotate(45deg);position:absolute "></div>	
 		</div>
 	</a>
+	<script src="js/jquery-3.6.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
