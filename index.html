@@ -26,11 +26,12 @@
   <link rel="stylesheet" href="css/style.css">
   <style>
 		
-	  .wrapper{
+	 .wrapper{
 		display: flex;
 		flex-direction: column
-	  }
+	 }
 	 
+
 	.header {
 		display:flex;
 		flex-direction: row-reverse;
@@ -55,6 +56,9 @@
 		background-size:100% 100%;
 		background-image:url("images/image_2022-09-26_19-28-57.png");
 		
+	}
+	#beb{
+		height:168px;
 	}
 	.bottem{
 		grid-row:3;
@@ -201,7 +205,6 @@
 	}
 	.circle{
 		display:flex; 
-		position:absolute;
 		justify-content: space-around; 
 		margin-top:35px;
 		left:50%;
@@ -295,12 +298,38 @@
 		margin-left:auto;margin-right:auto;display:block;
 		height:8px;width:50px;padding-bottom:10%;
 	}
-	.arrow-button1 {
-	  position: relative;
+	#beb{
+		height:180px;
+	}
+	.circles2 {
+	  display: flex;
+	  position:absolute;
+	  left:50%;
+	  bottom:0px;
+	  width: 50px;
+	  justify-content: space-between;
+	  margin: 96px auto 0px;
+	  transform:translate(-50%);
+	 
+	}
+	.circle2.active {
+	  background-color: transparent;
+	  border-radius: 50%;
+	  border:solid 1px #476E4D;
+	  width:9px;
+	  height:9px;
+	}
+	.circle2{
+		width:10px;
+		height:10px;
+		background-color: #2b4074;
+		border-radius: 50%;
+		color:#2b4074;
+	}
+	.arrow-button2 {
 	  width: 70px;
 	  height: 70px;
-	  border:None;
-	  background-color: #2b4074;
+	  background-color: #fff;
 	}
 	.owl-next {
 	  position: absolute;
@@ -319,11 +348,11 @@
 	  opacity: 0;
 	  transition: all 0.5s ease;
 	}
-	.arrow-button2 {
+	.arrow-button1 {
+	  position: relative;
 	  width: 70px;
 	  height: 70px;
-	  border:None;
-	  background-color: #fff;
+	  background-color: #2b4074;
 	}
 	.arrows {
 	  display: flex;
@@ -334,29 +363,40 @@
 	}
 	.circles {
 	  display: flex;
-	  max-width: 50px;
+	  position:absolute;
+	  left:50%;
+	  bottom:80px;
+	  width: 50px;
 	  justify-content: space-between;
-	  margin: 96px auto 79px;
+	  margin: 96px auto 0px;
+	  transform:translate(-50%);
+
+	}
+	button{
+		border:None;
 	}
 	.circle.active {
-	  background-color: #fff;
+	  background-color: transparent;
 	  border-radius: 50%;
+	  border:solid 1px #476E4D;
+	  width:9px;
+	  height:9px;
 	}
 	.circle{
 		width:10px;
 		height:10px;
+		background-color: #2b4074;
+		border-radius: 50%;
+		color:#2b4074;
 	}
 	.circles {
 	  display: flex;
 	  height:10px;
 	  max-width: 50px;
 	  justify-content: space-between;
-	  margin: 96px auto 79px;
+	  margin: 96px auto 0px;
 	}
-	.circle{
-			width:10px;
-			margin-bottom:80px;
-		}
+
 	.link{
 		color:#FFFFFF;
 		text-decoration: None;
@@ -1080,6 +1120,15 @@
 		.middle{
 			height:623px;
 		}	
+		#beb{
+			height:207px;
+		}
+		.main-description{
+			width:587px;
+		}
+		.owl-carousel1{
+			margin-top:87px;
+		}
 		.palchkidiv{
 			width:56px;
 			height:113px;
@@ -1362,12 +1411,7 @@
 			column-count:2;	
 			height:1745px;
 		}
-		.main-description{
-			
-			width:0%;
-			height:0px;
-			visibility:hidden;
-		}
+		
 		.next4{
 			height:1745px;
 		}
@@ -1384,6 +1428,9 @@
 	@media only screen and (max-width: 852px) {
 		.next1{
 			height:1730px;
+		}
+		.owl-carousel1{
+			margin-top:0px;
 		}
 		.left{
 			margin-left:25%;
@@ -1533,9 +1580,6 @@
 		.right{
 			margin-right:15%;
 		}
-		.recallme{
-			column-count:1;
-		}
 		.text10{
 			text-align:center;
 			width:580px;
@@ -1635,10 +1679,19 @@
 		#c2{
 			width:156px;
 		}
+		.owl-nav{
+			top:170px;
+		}
+		
 	 }
 	 @media only screen and (max-width: 762px) {
 		.text3{
 			width:557px;
+		}
+		
+		.main-description{
+			font-size:18px;
+			width:400px;
 		}
 		.text2{
 			width:360px;
@@ -1715,16 +1768,29 @@
 		.next1{
 			height:3480px;
 		}
-		.recallme{
-			column-count:1;
-		}
 		#rec{
-			padding-top:20px;
+			padding-top:67px;
+		}
+		.owl-nav{
+			visibility:visible;
 		}
 	 }
-	@media only screen and (max-width: 602px) {
+	@media only screen and (max-width: 671px) {
 		.next1{
 			height:3260px;
+		}
+		.arrows{
+			position:relative;
+		}
+		.owl-carousel1{
+			visibility:hidden;
+			width:0px;
+			height:0px;
+		}
+		.owl-nav{
+			visibility:hidden;
+			width:0px;
+			height:0px;
 		}
 		.magazini{
 			grid-template-columns:100%;
@@ -1858,6 +1924,27 @@
 			bottom:-4px;
 		}
 	}
+	@media only screen and (max-width: 623px) {
+		.recallme{
+			column-count:1;
+			height:301px;
+		}
+		.text2{
+			width:280px;
+			text-align:center;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		.text10{
+			width:280px;
+			height:73px;
+			margin:0px auto;
+			margin-bottom:0px;
+		}
+		.bottem{
+			height:301px;
+		}
+	}
 	@media only screen and (max-width: 464px) {
 		.next1{
 			height:3151px;
@@ -1871,10 +1958,7 @@
 		.item-12{
 			line-height:26px;
 		}
-		.recallme{
-			column-count:1;
-			height:301px;
-		}
+		
 		
 		.content-box{
 			height:200px;
@@ -1961,9 +2045,7 @@
 			font-size:16px;
 		}
 		
-		.text2{
-			width:280px;
-		}
+		
 		.text3{
 			margin:16px auto;
 			width:280px;
@@ -1996,18 +2078,11 @@
 			margin-left:auto;
 			margin-top:32px;
 		}
-		.text10{
-			width:280px;
-			height:73px;
-			margin:0px auto;
-			margin-bottom:0px;
-		}
+		
 		.recallme{
 			height:301px;
 		}
-		.bottem{
-			height:301px;
-		}
+		
 		
 		
 		.dich{
@@ -2050,11 +2125,6 @@
 			width:0px;
 			height:0px;
 
-		}
-		.text2{
-			text-align:center;
-			margin-left:auto;
-			margin-right:auto;
 		}
 		.text10{
 			text-align:center;
@@ -2111,7 +2181,7 @@
 	 
   </style>
 </head>
-<body>
+<body >
   
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -2157,10 +2227,10 @@
 		</div>
 		<img class="tblm" src="iconsfont/tblm.png">
 		<div class="circles">
-			<img src="images/oval2.svg" alt="circle" class="circle" />
-			<img src="images/oval2.svg" alt="circle" class="circle" />
-			<img src="images/oval2.svg" alt="circle" class="circle" />
-      </div>
+			<div class="circle" ></div>
+			<div class="circle" ></div>
+			<div class="circle" ></div>
+		</div>
     </div>
 	<div class="bottem" style="position:relative;">
 		<div class="recallme"> 
@@ -2359,14 +2429,33 @@
 			</figure>
 		</div>
 	</div>
-	<div class="next5">
+	<div class="next5" style="position:relative;">
 		<i class="fa-solid fa-quote-right" style="text-align:center;"></i>
-		<div style="position:relative">
-			<p class="item-12" style="color:#4A4A4A;text-align:center;margin-left:auto;margin-right:auto;font-family:Roboto Condensed;"> Если нужно создавать либо повышать имидж компании, <br>то <strong style="color:#2B4074">диджитал-маркетинг</strong> является наиболее подходящим</p>
+		<div  class="owl-carousel owl-carousel2">
+			<div id="beb" class="item" >
+				<div>
+				  <p class=" item-12" style="color:#4A4A4A;text-align:center;margin-left:auto;margin-right:auto;font-family:Roboto Condensed;"> Если нужно создавать либо повышать имидж компании, <br>то <strong style="color:#2B4074">диджитал-маркетинг</strong> является наиболее подходящим</p>
+  				  <p id="avtor" class="main-description" style="text-align:center;font-family:Roboto Condensed;color:#4A4A4A;font-size:20px;"><strong>- Маргарита Акулич</strong></p>
+				</div>
+			</div>
+			<div id="beb" class="item" >
+				<div>
+			  			<p class="item-12" style="color:#4A4A4A;text-align:center;margin-left:auto;margin-right:auto;font-family:Roboto Condensed;"> Если нужно создавать либо повышать имидж компании, <br>то <strong style="color:#2B4074">диджитал-маркетинг</strong> является наиболее подходящим</p>
+						<p id="avtor"  style="text-align:center;font-family:Roboto Condensed;color:#4A4A4A;font-size:20px;"><strong>- Маргарита Акулич</strong></p>
+				</div>
+			</div>
+			<div id="beb" class="item" >
+				<div>
+				   <p class=" item-12" style="color:#4A4A4A;text-align:center;margin-left:auto;margin-right:auto;font-family:Roboto Condensed;"> Если нужно создавать либо повышать имидж компании, <br>то <strong style="color:#2B4074">диджитал-маркетинг</strong> является наиболее подходящим</p>
+				   <p id="avtor"  style="text-align:center;font-family:Roboto Condensed;color:#4A4A4A;font-size:20px;"><strong>- Маргарита Акулич</strong></p>
+				</div>
+			</div>
 		</div>
-		<p id="avtor" style="text-align:center;font-family:Roboto Condensed;color:#4A4A4A;font-size:20px;"><strong>- Маргарита Акулич</strong></p>
-		<div id="jj" style=" display:flex; justify-content: space-around; margin-top:40px; margin-left:auto;margin-right:auto;padding-bottom:40px">
-			<span class="dot"> </span> <img class="buble" src="iconsfont/circle.png"> <span class="dot"> </span> 
+		
+		<div class="circles2">
+			<div class="circle2" ></div>
+			<div class="circle2" ></div>
+			<div class="circle2" ></div>
 		</div>
 		
 	</div>
